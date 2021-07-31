@@ -1,5 +1,4 @@
 
-
 function wakeDog(name, breed){
     return `Wake ${name} the ${breed}`
 }
@@ -27,15 +26,13 @@ function unleashDog(name, breed){
 let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog]
 
 function exerciseDog(name, breed){
+    
     let newArray = []
-    for (let i = 0; i <= routine.length; i++){
+
+    for (let i = 0; i < routine.length; i++){
+        //debugger;
         newArray.push(routine[i](name,breed))
     }
+
     return newArray
 }
-
-
-
-
-
-
